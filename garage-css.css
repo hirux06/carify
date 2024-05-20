@@ -1,0 +1,53 @@
+body {
+    background-color: #232323;
+    margin: 30px;
+    background: url("img/hero.jpg") no-repeat;
+}
+
+.dark {
+    background-color: #232323;
+}
+.centered-card {
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 350px; 
+    width: 400px; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; 
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+.custom-button:hover {
+    background-color: #0056b3; 
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-body{
+    
+    border-top-left-radius: 25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+

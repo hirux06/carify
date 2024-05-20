@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Comparison</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="compare.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 style="text-align: center;">Compare Cars</h1>
+    <div class="row select-wrapper">
+      <div class="col-md-4">
+        <select id="car1" class="form-control">
+          <option value="">Select Car 1</option>
+          <option value="1">Toyota Camry (2020) - &#8377;25000</option>
+          <option value="2">Honda Accord (2020) - &#8377;27000</option>
+          <option value="3">Ford Fusion (2020) - &#8377;23000</option>
+          <option value="4">Chevrolet Malibu (2020) - &#8377;26000</option>
+          <option value="5">Nissan Altima (2020) - &#8377;24000</option>
+          <option value="6">BMW 3 Series (2020) - &#8377;40000</option>
+          <option value="7">Audi A4 (2020) - &#8377;42000</option>
+          <option value="8">Mercedes-Benz C-Class (2020) - &#8377;45000</option>
+          <option value="9">Lexus ES (2020) - &#8377;42000</option>
+          <option value="10">Volvo S60 (2020) - &#8377;38000</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <select id="car2" class="form-control">
+          <option value="">Select Car 2</option>
+          <option value="1">Toyota Camry (2020) - &#8377;25000</option>
+          <option value="2">Honda Accord (2020) - &#8377;27000</option>
+          <option value="3">Ford Fusion (2020) - &#8377;23000</option>
+          <option value="4">Chevrolet Malibu (2020) - &#8377;26000</option>
+          <option value="5">Nissan Altima (2020) - &#8377;24000</option>
+          <option value="6">BMW 3 Series (2020) - &#8377;40000</option>
+          <option value="7">Audi A4 (2020) - &#8377;42000</option>
+          <option value="8">Mercedes-Benz C-Class (2020) - &#8377;45000</option>
+          <option value="9">Lexus ES (2020) - &#8377;42000</option>
+          <option value="10">Volvo S60 (2020) - &#8377;38000</option>
+        </select>
+      </div>
+      <div class="col-md-auto d-flex align-items-end">
+        <button id="compareBtn" class="btn btn-primary btn-sm mr-2">Compare</button>
+        <a href="index.html" class="btn btn-secondary btn-sm">Back to Main Page</a>
+      </div>
+    </div>
+    <div id="comparisonResult" class="mt-3"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="comapre.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carify Payment</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="payments-css.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 mb-4">Payment for Your Car</h1>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="model">Select Car Model</label>
+                <select class="form-control" id="model">
+                    <option>Select a model</option>
+                    <option value="10000">Model 1</option>
+                    <option value="15000">Model 2</option>
+                    <option value="20000">Model 3</option>
+                    <option value="25000">Model 4</option>
+                    <option value="30000">Model 5</option>
+                </select>
+                <small class="error-message" id="modelError"></small>
+            </div>
+            <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" class="form-control" id="price" placeholder="Price" readonly disabled>
+            </div>
+            <div class="form-group">
+                <label for="amount">Payment Amount (Ready Cash you are interested to pay)
+                </label>
+                <input type="text" class="form-control" id="amount" placeholder="Enter payment amount">
+                <small class="error-message" id="amountError"></small>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" class="form-control" id="card-number" placeholder="Enter card number">
+                <small class="error-message" id="cardNumberError"></small>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY">
+                    <small class="error-message" id="expiryDateError"></small>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="CVV">
+                    <small class="error-message" id="cvvError"></small>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="name-on-card">Name on Card</label>
+                <input type="text" class="form-control" id="name-on-card" placeholder="Enter name on card">
+                <small class="error-message" id="nameError"></small>
+            </div>
+            <div class="form-group">
+                <label for="billing-address">Billing Address</label>
+                <textarea class="form-control" id="billing-address" rows="3" placeholder="Enter billing address"></textarea>
+                <small class="error-message" id="addressError"></small>
+            </div>
+            <div class="d-flex justify-content-between">
+                <button id="compareBtn" class="btn btn-primary btn-md mr-2" style="width: 48%;">Make Payment</button>
+                <a href="index.html" class="btn btn-secondary btn-md" style="width: 48%;">Back to Main Page</a>
+            </div>
+            
+        </form>
+    </div>
+    <script src="payment-js.js"></script>
+</body>
+</html>
